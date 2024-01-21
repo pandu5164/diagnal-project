@@ -1,0 +1,47 @@
+.navbar {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 9;
+  .nav-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .nav-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    &-left {
+      display: flex;
+      position: absolute;
+      padding: 0 0 0 16px;
+      top: 0;
+      align-items: center;
+      gap: 24px;
+      margin: auto;
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      gap: 24px;
+      top: 16px;
+      right: 20px;
+      padding: 0 0 0 16px;
+      margin-left: auto;
+    }
+  }
+}
+.navbar-menu-movie-filter {
+  position: relative;
+  top: 60px;
+  padding: 8px;
+  input {
+    width: 96%;
+    padding: 8px 2px;
+    margin: 8px 2px;
+    border-radius: 5px;
+  }
+}
