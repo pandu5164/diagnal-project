@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./navbar.scss";
-export default NavBar = ({
+const NavBar = ({
   title,
   filterItemListByInput = () => {},
   restView = () => {},
@@ -80,3 +80,4 @@ export default NavBar = ({
     </React.Fragment>
   );
 };
+export default NavBar;

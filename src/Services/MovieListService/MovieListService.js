@@ -1,4 +1,4 @@
-export default getMovieList = async (obj) => {
+const getMovieList = async (obj) => {
   const {
     pageNum,
     callBacks: { onSuccess, onError },
@@ -14,3 +14,4 @@ export default getMovieList = async (obj) => {
       return err;
     });
 };
+export default getMovieList;

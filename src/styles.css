@@ -15,5 +15,6 @@ body {
     padding: 40px 0;
     margin: 20px 0;
     overflow-y: auto;
+    flex-direction: column;
   }
 }

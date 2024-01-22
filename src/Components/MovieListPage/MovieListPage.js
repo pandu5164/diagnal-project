@@ -26,7 +26,7 @@ const MovieListPage = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
+  return (<React.Fragment>
     <div className="movie-list">
       {!movieList.length && <p>No data to show</p>}
       {movieList.length &&
@@ -51,10 +51,10 @@ const MovieListPage = ({
           </div>
         ))}
       <br />
-      {totalContentItem === movieList.length && imageList.length && (
-        <p className="end-of-list">{`--- End of list ${imageList.length} items viewed---`}</p>
-      )}
     </div>
-  );
+    {totalContentItem === movieList.length && imageList.length && (
+      <p className="end-of-list"><span>End of list</span><br /><span>{`${imageList.length} items viewed`}</span></p>
+    )}
+  </React.Fragment>);
 };
 export default trackWindowScroll(MovieListPage); // lazy load image plugin component requires to be wrapped in trackWindowScroll to indentify scroll behaviour
