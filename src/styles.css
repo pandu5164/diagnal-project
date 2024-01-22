@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+.App {
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  width: 100%;
+  background-color: #171717;
+  color: #ffffff;
+  position: relative;
+  overflow-y: auto;
+  .movie-banners {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 20px 0;
+    overflow-y: auto;
+  }
+}
