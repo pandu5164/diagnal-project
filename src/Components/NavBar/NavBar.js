@@ -42,6 +42,7 @@ const NavBar = ({
         <div className="nav-menu">
           <div className="nav-menu-left">
             <LazyLoadImage
+              onClick={() => showSearchInput(false)}
               wrapperClassName="nav-back"
               src={`https://test.create.diagnal.com/images/Back.png`}
               height={24}
